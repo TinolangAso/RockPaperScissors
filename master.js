@@ -17,7 +17,8 @@ function main()
 
         function getHumanChoice()
         {
-                return prompt("What's your pick? ");
+                let choice = prompt("What's your pick? ");
+                return choice.trim().toLowerCase();
         }
 
         HumanChoice = getHumanChoice();
