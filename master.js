@@ -2,7 +2,7 @@
 
 function main()
 {
-        let ComputerChoice = ["rock", "paper", "scissors"];
+        let ComputerChoice = ["rock", "paper", "scissor"];
 
         function getComputerChoice()
         {
@@ -25,11 +25,9 @@ function main()
 
         function playRound(humanChoice, computerChoice)
         {
-                let humanScore, computerScore;
+                let humanScore = 0;
+                let computerScore = 0;
 
-                /** 
-                 * Insert code here
-                 * **/
 
                 if (humanScore > computerScore)
                 {
