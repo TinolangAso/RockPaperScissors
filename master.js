@@ -25,10 +25,14 @@ function main()
 
         function playRound(humanChoice, computerChoice)
         {
-                let humanScore = 0;
-                let computerScore = 0;
+               // let humanScore = 0;
+                //let computerScore = 0;
 
 
+
+                
+
+/*
                 if (humanScore > computerScore)
                 {
                         console.log("You Win!\n");
@@ -43,6 +47,7 @@ function main()
                 {
                         console.log("It's a tie!\n");
                 }
+                */
 
         }
 
