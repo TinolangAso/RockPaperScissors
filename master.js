@@ -23,6 +23,31 @@ function main()
 
         HumanChoice = getHumanChoice();
 
+        function playRound(humanChoice, computerChoice)
+        {
+                let humanScore, computerScore;
+
+                /** 
+                 * Insert code here
+                 * **/
+
+                if (humanScore > computerScore)
+                {
+                        console.log("You Win!\n");
+                }
+
+                else if (humanScore < computerScore);
+                {
+                        console.log("You lose!\n");
+                }
+
+                else
+                {
+                        console.log("It's a tie!\n");
+                }
+
+        }
+
         console.log(`Human choice: ${HumanChoice}`);
 }
 
