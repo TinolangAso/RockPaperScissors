@@ -2,18 +2,19 @@
 
 function main()
 {
-        let ComputerChoice = ["rock", "paper", "scissor"];
+        let computerChoices = ["rock", "paper", "scissor"];
 
         function getComputerChoice()
         {
-                return Math.floor(Math.random() * 3);
+                let randomIndex = Math.floor(Math.random() * 3);
+                return computerChoices[randomIndex];
         }
 
-        let n = getComputerChoice(); //To index the ComputerChoice
+        let computerChoice = getComputerChoice();
+        console.log(`computer choice: ${computerChoice}\n`);
 
-        console.log(`Computer choice: ${ComputerChoice[n]}\n`);
 
-        let HumanChoice;
+        let humanChoice;
 
         function getHumanChoice()
         {
@@ -21,24 +22,25 @@ function main()
                 return choice.trim().toLowerCase();
         }
 
-        HumanChoice = getHumanChoice();
+        humanChoice = getHumanChoice();
+        console.log(`human choice: ${humanChoice}\n`);
 
-                let humanScore = 0;
-                let computerScore = 0;
+        let humanScore = 0;
+        let computerScore = 0;
+
         function playRound(humanChoice, computerChoice)
         {
                 
                 if (humanChoice === computerChoice)
                 {
-                        humanScore++;
                         console.log(`It's a tie!\n`);
                 }
 
 
                 else if (
-                        (humanChoice === "rock" && computerChoice == "scissor")||
-                        (humanChoice === "paper" && computerChoice == "rock")||
-                        (humanChoice === "scissor" && computerChoice == "paper")||
+                        (humanChoice === "rock" && computerChoice === "scissor")||
+                        (humanChoice === "paper" && computerChoice === "rock")||
+                        (humanChoice === "scissor" && computerChoice === "paper")
                     )
                 {
                         humanScore++;
@@ -51,30 +53,9 @@ function main()
                         console.log(`You lose! ${humanChoice} loses against ${computerChoice}\n`);
                 }
 
-
-
-                
-
-/*
-                if (humanScore > computerScore)
-                {
-                        console.log("You Win!\n");
-                }
-
-                else if (humanScore < computerScore);
-                {
-                        console.log("You lose!\n");
-                }
-
-                else
-                {
-                        console.log("It's a tie!\n");
-                }
-                */
-
         }
 
-        console.log(`Human choice: ${HumanChoice}`);
+        playRound(humanChoice, computerChoice);
 }
 
 main();
