@@ -2,7 +2,7 @@
 
 function main()
 {
-        let ComputerChoice = ["Rock", "Paper", "Scissors"];
+        let ComputerChoice = ["rock", "paper", "scissors"];
 
         function getComputerChoice()
         {
